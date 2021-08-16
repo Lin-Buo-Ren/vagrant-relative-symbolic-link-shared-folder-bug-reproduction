@@ -10,9 +10,9 @@ Vagrant errors when a relative symbolic link points to an in-project directory i
 
 ## Current behavior
 
-Vagrant triggeres a "There was an error when attempting to rsync a synced folder." non-fatal error: [with-complex-pwd-path.vagrant.out](with-complex-pwd-path.vagrant.out)
+Vagrant triggeres a "There was an error when attempting to rsync a synced folder." non-fatal error: [with-complex-pwd-path.vagrant.out](with-complex-pwd-path.vagrant.out) (debug log: [without-complex-pwd-path.vagrant.debug.out](without-complex-pwd-path.vagrant.debug.out))
 
-Note that when a path containing CJK characters is used, [a Encoding::CompatibilityError fatal error is raised instead](with-complex-pwd-path.vagrant.out), which is a separate issue that is filed separately(#issue-id-here).  To test this configuration in particular, clone the project's repository under `~/中文測試路徑` in reproduce step 1
+Note that when a path containing CJK characters is used, [a Encoding::CompatibilityError fatal error is raised instead](with-complex-pwd-path.vagrant.out)(debug log: [with-complex-pwd-path.vagrant.debug.out](with-complex-pwd-path.vagrant.debug.out)), which is a separate issue that is filed separately(#issue-id-here).  To test this configuration in particular, clone the project's repository under `~/中文測試路徑` in reproduce step 1
 
 ## Expected behavior
 
